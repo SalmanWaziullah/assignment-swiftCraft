@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- title & favicon -->
+
+    <title>Swift</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+
+    <!-- font-awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- google fonts  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind & daisyUi -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar relative z-50 bg-base-100 shadow-sm md:px-20">
+        <div class="navbar-start gap-2">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="-1"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            >
+              <a>Home</a>
+              <a> Products </a>
+              <a> About</a>
+              <a> Contact</a>
+            </ul>
+          </div>
+          <a href="" class="text-xl flex items-center gap-1">
+            <span class="text-sky-500 font-bold">SwiftCart</span>
+          </a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu gap-2 menu-horizontal px-1">
+            <li>
+              <a class="btn">Home</a>
+            </li>
+            <li>
+              <a class="btn">Products </a>
+            </li>
+            <li><a class="btn"> About</a></li>
+            <li><a class="btn"> Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+      </div>
+    </nav>
+    <!-- hero section  -->
+
+    <section>
+      <div
+        class="hero min-h-screen"
+        style="background-image: url(/assets/banner-image.png)"
+      >
+        <div class="hero-overlay"></div>
+        <div class="hero-content text-neutral-content text-start">
+          <div class="max-w-md">
+            <h1 class="mb-5 text-5xl font-bold">Best Collection For You</h1>
+            <p class="mb-5">
+              Discover The latest Trends in Fashion.Electric And More.Shop With
+              Confidance And Style With SwiftCart.
+            </p>
+            <button class="btn btn-primary">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about py-10 font-gray">
+      <h1 class="text-3xl text-center pb-3 font-bold">Why Choose Us</h1>
+      <h1 class="text-1xl text-center pb-5">
+        We provide the best shopping experience with top-notch services
+      </h1>
+      <div class="about-header">
+        <div
+          class="card bg-base-100 md:card-sm md:shadow-sm flex md:flex-row gap-4 px-30"
+        >
+          <div class="card-body">
+            <div class="justify-start card-actions">
+              <a href="" class="text-2xl"
+                ><i class="fa-solid fa-truck-pickup"></i
+              ></a>
+            </div>
+            <h2 class="card-title text-1xl font-bold">Fast Delivery</h2>
+            <p class="text-sm font-gray">
+              Get your orders delivered to your doorstep quickly and
+              efficiently.
+            </p>
+          </div>
+          <div class="card bg-base-100 mdcard-sm shadow-sm">
+            <div class="card-body">
+              <div class="justify-start card-actions">
+                <a href="" class="text-2xl"
+                  ><i class="fa-regular fa-headphones"></i
+                ></a>
+              </div>
+              <h2 class="card-title text-1xl font-bold">24/7 Support</h2>
+              <p class="text-sm">
+                Our support team is available around the clock to assist you.
+              </p>
+            </div>
+          </div>
+          <div class="card bg-base-100 card-sm shadow-sm">
+            <div class="card-body">
+              <div class="justify-start card-actions">
+                <a href="" class="text-2xl"
+                  ><i class="fa-solid fa-truck-pickup"></i
+                ></a>
+              </div>
+              <h2 class="card-title text-1xl font-bold">Secure Payment</h2>
+              <p class="text-sm">
+                Experience safe and secure transactions with our encrypted
+                payment systems.
+              </p>
+            </div>
+          </div>
+          <div class="card bg-base-100 card-sm shadow-sm">
+            <div class="card-body">
+              <div class="justify-start card-actions">
+                <a href="" class="text-2xl"
+                  ><i class="fa-solid fa-truck-pickup"></i
+                ></a>
+              </div>
+              <h2 class="card-title text-1xl font-bold">Easy Returns</h2>
+              <p class="text-sm">
+                Not satisfied? Return your products easily within 30 days.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </section>
+
+    <div class="products"></div>
+
+    <footer
+      class="footer md:flex-row flex flex-col space-between justify-between text-[#cacaca] p-10 bg-[#03041b] md:card-sm"
+    >
+      <nav class="w-4/12 md-px-8 w-70">
+        <h6 class="footer-title">SwiftCart</h6>
+        <p>
+          Your one-stop shop for all your fashion and lifestyle needs. Quality
+          products, fast delivery, and excellent support.
+        </p>
+      </nav>
+      <nav class="w-2/12">
+        <h6 class="footer-title">QUICK LINKS</h6>
+        <a class="link link-hover">Home</a>
+        <a class="link link-hover">Products</a>
+        <a class="link link-hover">About</a>
+        <a class="link link-hover">Contact</a>
+      </nav>
+      <nav class="w-2/12">
+        <h6 class="footer-title">SUPPORT</h6>
+        <a class="link link-hover">FAQ </a>
+        <a class="link link-hover">Shipping</a>
+        <a class="link link-hover">Returns</a>
+        <a class="link link-hover">Privacy Policy</a>
+      </nav>
+      <form class="w-4/12">
+        <h6 class="footer-title">SUBSCRIBE TO OUR Newsletter</h6>
+        <a href="" class="w-50"
+          >The latest news, articles, and resources, sent to your inbox
+          weekly</a
+        >
+        <fieldset class="w-80">
+          <label>Enter your email address</label>
+          <div class="join gap-2">
+            <input
+              type="text"
+              placeholder="username@site.com"
+              class="input input-bordered join-item"
+            />
+            <button class="btn btn-primary join-item">Subscribe</button>
+          </div>
+        </fieldset>
+      </form>
+    </footer>
+  </body>
+</html>
