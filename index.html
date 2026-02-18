@@ -64,7 +64,7 @@
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <a>Home</a>
-              <a> Products </a>
+              <a id="load-product"> Products </a>
               <a> About</a>
               <a> Contact</a>
             </ul>
@@ -79,7 +79,7 @@
               <a class="btn">Home</a>
             </li>
             <li>
-              <a class="btn">Products </a>
+              <a class="btn" href="#categories">Products </a>
             </li>
             <li><a class="btn"> About</a></li>
             <li><a class="btn"> Contact</a></li>
@@ -177,7 +177,8 @@
       </div>
     </section>
 
-    <div class="products"></div>
+    <div id="categories" class="flex flex-row flex-wrap gap-4 mx-auto justify-center">
+    </div>
 
     <footer
       class="footer md:flex-row flex flex-col space-between justify-between text-[#cacaca] p-10 bg-[#03041b] md:card-sm"
@@ -222,5 +223,7 @@
         </fieldset>
       </form>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
